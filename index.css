@@ -1,0 +1,38 @@
+* {
+  border: black solid;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator {
+  width: 400px;
+  height: 600px;
+  border: solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#display,
+#keypad {
+  margin: 10px;
+  width: 90%;
+}
+
+#display {
+  flex: 1 1 0;
+}
+
+#keypad {
+  flex: 5 1 0;
+  display: flex;
+}
+
+#keypad ol {
+  flex: 1 1 0;
+}
