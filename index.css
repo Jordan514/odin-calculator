@@ -1,7 +1,3 @@
-* {
-  border: black solid;
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -21,11 +17,12 @@ body {
 #display,
 #keypad {
   margin: 10px;
-  width: 90%;
+  width: 360px;
 }
 
 #display {
   flex: 1 1 0;
+  border: black solid;
 }
 
 #keypad {
@@ -33,6 +30,47 @@ body {
   display: flex;
 }
 
-#keypad ol {
-  flex: 1 1 0;
+#numbers,
+#operators,
+#special {
+  list-style-type: none;
+  padding: 0%;
+  display: flex;
+}
+
+#numbers {
+  flex: 3 0 60%;
+  list-style-type: none;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+#operators {
+  flex: 1 0 20%;
+  list-style-type: none;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+#special {
+  flex: 1 0 20%;
+  list-style-type: none;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+#numbers *,
+#special *,
+#operators * {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+button {
+  align-items: center;
+  font-size: large;
 }
